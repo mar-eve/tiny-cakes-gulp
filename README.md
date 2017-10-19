@@ -1,5 +1,9 @@
 # bootstrap-4-sass
 
+Based on the instructions created by Gary Simon for coursetro.com found at: 
+https://coursetro.com/posts/design/72/Installing-Bootstrap-4-Tutorial
+
+
 ## Dependencies
 
 NPM and Gulp
