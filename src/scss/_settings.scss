@@ -46,42 +46,46 @@
 // Color system
 //
 
-//$white:  #fff;
-//$gray-100: #f8f9fa;
-//$gray-200: #e9ecef;
-//$gray-300: #dee2e6;
-//$gray-400: #ced4da;
-//$gray-500: #adb5bd;
-//$gray-600: #868e96;
-//$gray-700: #495057;
-//$gray-800: #343a40;
-//$gray-900: #212529;
-//$black:  #000;
+  $white:  #fff;
+   $gray: #c5c0c6;
+  $gray-100: #f8f9fa;
+  $gray-200: #e9ecef;
+  $gray-300: #dee2e6;
+  $gray-400: #ced4da;
+  $gray-500: #adb5bd;
+  $gray-600: #868e96;
+  $gray-700: #495057;
+  $gray-800: #343a40;
+  $gray-900: #212529;
+  $black:  #000;
 
-//$grays: (
-  //100: $gray-100,
-  //200: $gray-200,
-  //300: $gray-300,
-  //400: $gray-400,
-  //500: $gray-500,
-  //600: $gray-600,
-  //700: $gray-700,
-  //800: $gray-800,
-  //900: $gray-900
-//);
+ $grays: (
+    100: $gray-100,
+    200: $gray-200,
+    300: $gray-300,
+    400: $gray-400,
+    500: $gray-500,
+    600: $gray-600,
+    700: $gray-700,
+    800: $gray-800,
+    900: $gray-900
+ );
 
-//$blue:    #007bff;
+  $blue:    #78ddf9;
 //$indigo:  #6610f2;
 //$purple:  #6f42c1;
 //$pink:    #e83e8c;
 //$red:     #dc3545;
 //$orange:  #fd7e14;
 //$yellow:  #ffc107;
-//$green:   #28a745;
+  $green:   #568854;
 //$teal:    #20c997;
 //$cyan:    #17a2b8;
+  $lilac:   #dea0f7;
+  $gold:    #efcc70;
 
-//$colors: (
+
+ //$colors: (
   //blue: blue,
   //indigo: $indigo,
   //purple: $purple,
@@ -95,18 +99,18 @@
   //white: $white,
   //gray: $gray-600,
   //gray-dark: $gray-800
-//);
+ //);
 
-//$theme-colors: (
-  //primary: $blue,
-  //secondary: $gray-600,
-  //success: $green,
-  //info: $cyan,
-  //warning: $yellow,
-  //danger: $red,
-  //light: $gray-100,
-  //dark: $gray-800
-//);
+ $theme-colors: (
+   primary: $blue,
+   secondary: $green,
+   success: $green,
+   info: $lilac,
+   warning: $yellow,
+   danger: $red,
+   light: $gray-100,
+   dark: $gray-800
+ );
 
 // Set a specific jump point for requesting color jumps
 //$theme-color-interval: 8%;
@@ -153,17 +157,18 @@
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $green;
-$body-color:    $pink;
+  $body-bg:       $gold;
+//$body-color:    #dea0f7;
 
 // Links
 //
 // Style anchor elements.
 
-//$link-color:            theme-color("primary");
-//$link-decoration:       none;
-//$link-hover-color:      darken($link-color, 15%);
-//$link-hover-decoration: underline;
+ $link-color:            theme-color("primary");
+ $link-decoration:       none;
+ //$link-hover-color:      darken($link-color, 15%);
+ $link-hover-color:  #000;
+ //$link-hover-decoration: underline;
 
 
 // Grid breakpoints
@@ -200,7 +205,7 @@ $body-color:    $pink;
 // Set the number of columns and specify the width of the gutters.
 
 //$grid-columns: 12;
-//$grid-gutter-width: 30px;
+$grid-gutter-width: 300px;
 
 // Components
 //
@@ -229,32 +234,34 @@ $body-color:    $pink;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-//$font-family-base:       $font-family-sans-serif;
+ $font-family-base:       $font-family-sans-serif;
 
-//$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-//$font-size-lg:   1.25rem;
-//$font-size-sm:   .875rem;
+ $font-size-base: 1rem; // Assumes the browser default, typically `16px`
+ $font-size-lg:   1.25rem;
+ $font-size-sm:   .875rem;
 
-//$font-weight-normal: normal;
-//$font-weight-bold: bold;
+ $font-weight-normal: normal;
+ $font-weight-bold: bold;
 
-//$font-weight-base: $font-weight-normal;
-//$line-height-base: 1.5;
+ $font-weight-base: $font-weight-normal;
+ $line-height-base: 1.5;
 
-//$h1-font-size: 2.5rem;
-//$h2-font-size: 2rem;
-//$h3-font-size: 1.75rem;
+ $h1-font-size: 2.5rem;
+ $h2-font-size: 2rem;
+ $h3-font-size: 1.75rem;
 //$h4-font-size: 1.5rem;
 //$h5-font-size: 1.25rem;
 //$h6-font-size: 1rem;
 
-//$headings-margin-bottom: ($spacer / 2);
-//$headings-font-family:   inherit;
-//$headings-font-weight:   500;
-//$headings-line-height:   1.1;
-//$headings-color:         inherit;
+ // $headings-margin-bottom: ($spacer / 2);
+ $h1-margin-bottom: 50px;
+ $h1-margin-top: 50px;
+ $headings-font-family:   inherit;
+ $headings-font-weight:   500;
+ $headings-line-height:   1.1;
+ $headings-color:         inherit;
 
 //$display1-size: 6rem;
 //$display2-size: 5.5rem;
@@ -526,16 +533,15 @@ $body-color:    $pink;
 
 // Navs
 
-//$nav-link-padding-y:            .5rem;
-//$nav-link-padding-x:            1rem;
+  $nav-link-padding-y:            .5rem;
+  $nav-link-padding-x:             1rem;
 //$nav-link-disabled-color:       $gray-600;
-
-//$nav-tabs-border-color:                       #ddd;
+  $nav-tabs-border-color:                       #ddd;
 //$nav-tabs-border-width:                       $border-width;
 //$nav-tabs-border-radius:                      $border-radius;
 //$nav-tabs-link-hover-border-color:            $gray-200;
-//$nav-tabs-link-active-color:                  $gray-700;
-//$nav-tabs-link-active-bg:                     $body-bg;
+  $nav-tabs-link-active-color:                  $gray-700;
+  $nav-tabs-link-active-bg:                     $green;
 //$nav-tabs-link-active-border-color:           #ddd;
 
 //$nav-pills-border-radius:     $border-radius;
@@ -544,19 +550,19 @@ $body-color:    $pink;
 
 // Navbar
 
-//$navbar-padding-y:                  ($spacer / 2);
-//$navbar-padding-x:                  $spacer;
+ $navbar-padding-y:                  ($spacer / 2);
+ $navbar-padding-x:                  $spacer;
 
-//$navbar-brand-font-size:            $font-size-lg;
+ //$navbar-brand-font-size:            $font-size-lg;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-//$nav-link-height:                   $navbar-brand-font-size * $line-height-base;
-//$navbar-brand-height:               ($font-size-base * $line-height-base + $nav-link-padding-y * 2);
-//$navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) / 2;
+ // $nav-link-height:                   $navbar-brand-font-size * $line-height-base;
+ // $navbar-brand-height:               ($font-size-base * $line-height-base + $nav-link-padding-y * 2);
+ // $navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) / 2;
 
-//$navbar-toggler-padding-y:           .25rem;
-//$navbar-toggler-padding-x:           .75rem;
-//$navbar-toggler-font-size:           $font-size-lg;
-//$navbar-toggler-border-radius:       $btn-border-radius;
+$navbar-toggler-padding-y:           .25rem;
+$navbar-toggler-padding-x:           .75rem;
+$navbar-toggler-font-size:           $font-size-lg;
+$navbar-toggler-border-radius:       $btn-border-radius;
 
 //$navbar-dark-color:                 rgba($white,.5);
 //$navbar-dark-hover-color:           rgba($white,.75);
@@ -565,12 +571,12 @@ $body-color:    $pink;
 //$navbar-dark-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{//$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
 //$navbar-dark-toggler-border-color:  rgba($white,.1);
 
-//$navbar-light-color:                rgba($black,.5);
-//$navbar-light-hover-color:          rgba($black,.7);
-//$navbar-light-active-color:         rgba($black,.9);
-//$navbar-light-disabled-color:       rgba($black,.3);
-//$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{//$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
-//$navbar-light-toggler-border-color: rgba($black,.1);
+  $navbar-light-color:                rgba($black,.5);
+  $navbar-light-hover-color:          rgba($black,.7);
+  $navbar-light-active-color:         rgba($black,.9);
+  $navbar-light-disabled-color:       rgba($black,.3);
+  //$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{//$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+  $navbar-light-toggler-border-color: rgba($black,.1);
 
 // Pagination
 

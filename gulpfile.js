@@ -19,6 +19,7 @@ gulp.task('js', function() {
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
+        browser: "google chrome",
         server: "./src"  
     });
 
