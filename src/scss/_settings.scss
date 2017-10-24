@@ -135,7 +135,7 @@
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-//$spacer: 1rem;
+ $spacer: 1rem;
 //$spacers: (
   //0: 0,
   //1: ($spacer * .25),
@@ -158,15 +158,15 @@
 // Settings for the `<body>` element.
 
   $body-bg:       $gold;
-//$body-color:    #dea0f7;
+  $body-color:    #666666;
 
 // Links
 //
 // Style anchor elements.
 
- $link-color:            theme-color("primary");
+ $link-color:            theme-color("dark");
  $link-decoration:       none;
- //$link-hover-color:      darken($link-color, 15%);
+ $link-hover-color:      darken($link-color, 15%);
  $link-hover-color:  #000;
  //$link-hover-decoration: underline;
 
@@ -234,7 +234,7 @@ $grid-gutter-width: 300px;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Open Sans", Arial, sans-serif;
 //$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
  $font-family-base:       $font-family-sans-serif;
 
@@ -255,7 +255,7 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 //$h5-font-size: 1.25rem;
 //$h6-font-size: 1rem;
 
- // $headings-margin-bottom: ($spacer / 2);
+ $headings-margin-bottom: ($spacer * 3);
  $h1-margin-bottom: 50px;
  $h1-margin-top: 50px;
  $headings-font-family:   inherit;
@@ -279,7 +279,7 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 
 //$small-font-size: 80%;
 
-//$text-muted: $gray-600;
+ $text-muted: $gray-600;
 
 //$blockquote-small-color:  $gray-600;
 //$blockquote-font-size:    ($font-size-base * 1.25);
