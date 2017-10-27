@@ -5779,6 +5779,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 #social-media > li {
   font-size: 30px; }
 
+h1 {
+  font-weight: bold;
+  color: #343a40; }
+
 #home h1 {
   font-weight: bold;
   margin-bottom: 30px; }
@@ -5794,27 +5798,51 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-bottom: 90px; }
 
 .carousel-item img {
-  padding: 0 100px;
+  padding: 10px 100px;
   margin: 100px 0; }
 
 .carousel-item h3 {
-  padding-top: 80px;
-  padding-bottom: 0; }
+  padding: 50px 95px 0 0; }
 
 .carousel-item p {
-  padding: 80px 0 60px; }
+  padding: 0 95px 10px 0; }
+
+.carousel-item a {
+  margin-right: 95px;
+  padding: 10px 20px; }
 
 #item1 {
   background: #7fc98f; }
+  #item1 a {
+    color: #fff;
+    background: #494a12; }
+  #item1 a:hover {
+    color: #494a12;
+    background: #fff;
+    border: 2px solid #494a12;
+    text-decoration: none; }
 
 #item2 {
   background: #dea0f7; }
+  #item2 a {
+    color: #fff;
+    background: #632326; }
+  #item2 a:hover {
+    color: #632326;
+    background: #fff;
+    border: 2px solid #632326;
+    text-decoration: none; }
 
 #item3 {
   background: #78ddf9; }
-
-p {
-  padding-bottom: 25px; }
+  #item3 a {
+    color: #fff;
+    background: #10236a; }
+  #item3 a:hover {
+    color: #10236a;
+    background: #fff;
+    border: 2px solid #10236a;
+    text-decoration: none; }
 
 .col-md-6, .col-12, .col-md-3, .col-sm-6, #navbarNav {
   padding: 80px 120px; }
@@ -5822,19 +5850,34 @@ p {
 .navbar {
   background: #efcc70; }
 
+.carousel-control-next-icon {
+  color: #000; }
+
 #logo {
   width: 40%;
   max-width: 10%;
   height: auto;
-  margin-top: 90px; }
+  margin-top: 90px;
+  margin-bottom: 90px; }
+
+#contact a:hover {
+  color: #bc9940;
+  text-decoration: none; }
+
+#mail {
+  border-right: 3px solid #ced4da; }
 
 #articles {
   padding-bottom: 0; }
-  #articles a {
-    padding-bottom: 40px; }
+
+#articles-list ul {
+  margin-bottom: 200px; }
 
 #about-us {
   background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
 
 #about-product {
   background: url("../assets/backgrounds/knitting-blue.jpg"); }
+
+#social-media .navbar-light .navbar-nav .active > .nav-link {
+  color: red; }
