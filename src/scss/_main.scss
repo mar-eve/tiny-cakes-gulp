@@ -29,7 +29,21 @@
 
 #social-media > li {
 	font-size: 30px;
+     color: red;
+}
+.navbar-nav > .nav-item {
+	color: red;
+}
+.navbar-nav > .nav-item:hover {
+	color: blue;
+}
 
+#logo {
+	width: 40%;
+	max-width: 10%;
+	height: auto;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
 h1 {
@@ -53,6 +67,13 @@ h1 {
 	margin-top: 30px;
 	margin-bottom: 90px;
 	}
+}
+#about-us{
+ 	background-image: url("../assets/backgrounds/symphony-gold.jpg")
+}
+
+#about-product{
+ background: url("../assets/backgrounds/knitting-blue.jpg");
 }
 
 .carousel-item {
@@ -126,22 +147,30 @@ h1 {
 	padding: 80px 120px;
 
 }
-.navbar {
-	background: $gold;
-}
+
 
 .carousel-control-next-icon {
 	color: #000;
 }
 
-#logo {
-	width: 40%;
-	max-width: 10%;
-	height: auto;
-	margin-top: 90px;
-	margin-bottom: 90px;
+
+#articles {
+	padding-bottom: 0;
+
+
 }
 
+#articles-list {
+	
+	//height: 100px;
+	ul {
+		margin-bottom: 200px;
+	}
+	a {
+		text-decoration: none;
+		padding-bottom: 60px;
+	}
+}
 #contact {
 	
 	a{
@@ -157,31 +186,12 @@ h1 {
 		border-right: 3px solid $gray-400;
 	}
 
-#articles {
-	padding-bottom: 0;
 
 
-}
 
-#articles-list {
-	
-	//height: 100px;
-	ul {
-		margin-bottom: 200px;
-	}
-}
-
-#about-us{
- 	background-image: url("../assets/backgrounds/symphony-gold.jpg")
-}
-
-#about-product{
- background: url("../assets/backgrounds/knitting-blue.jpg");
-}
 #social-media{
-.navbar-light .navbar-nav .active > .nav-link
+.navbar-light .navbar-nav .active > .nav-link{}
 
- {color:red;}
 
 
 }

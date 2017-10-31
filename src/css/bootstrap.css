@@ -5777,7 +5777,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-right: 10px; }
 
 #social-media > li {
-  font-size: 30px; }
+  font-size: 30px;
+  color: red; }
+
+.navbar-nav > .nav-item {
+  color: red; }
+
+.navbar-nav > .nav-item:hover {
+  color: blue; }
+
+#logo {
+  width: 40%;
+  max-width: 10%;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 90px; }
 
 h1 {
   font-weight: bold;
@@ -5796,6 +5810,12 @@ h1 {
 #home img {
   margin-top: 30px;
   margin-bottom: 90px; }
+
+#about-us {
+  background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
+
+#about-product {
+  background: url("../assets/backgrounds/knitting-blue.jpg"); }
 
 .carousel-item img {
   padding: 10px 100px;
@@ -5847,25 +5867,8 @@ h1 {
 .col-md-6, .col-12, .col-md-3, .col-sm-6, #navbarNav {
   padding: 80px 120px; }
 
-.navbar {
-  background: #efcc70; }
-
 .carousel-control-next-icon {
   color: #000; }
-
-#logo {
-  width: 40%;
-  max-width: 10%;
-  height: auto;
-  margin-top: 90px;
-  margin-bottom: 90px; }
-
-#contact a:hover {
-  color: #bc9940;
-  text-decoration: none; }
-
-#mail {
-  border-right: 3px solid #ced4da; }
 
 #articles {
   padding-bottom: 0; }
@@ -5873,11 +5876,13 @@ h1 {
 #articles-list ul {
   margin-bottom: 200px; }
 
-#about-us {
-  background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
+#articles-list a {
+  text-decoration: none;
+  padding-bottom: 60px; }
 
-#about-product {
-  background: url("../assets/backgrounds/knitting-blue.jpg"); }
+#contact a:hover {
+  color: #bc9940;
+  text-decoration: none; }
 
-#social-media .navbar-light .navbar-nav .active > .nav-link {
-  color: red; }
+#mail {
+  border-right: 3px solid #ced4da; }
