@@ -5762,7 +5762,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .navbar {
   background-color: #efcc70;
-  height: 50px; }
+  height: 90px; }
+  .navbar img {
+    width: 25%; }
 
 .navbar-nav {
   float: none;
@@ -5776,40 +5778,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 20px;
   padding-right: 10px; }
 
-#social-media > li {
-  font-size: 30px;
-  color: red; }
-
-.navbar-nav > .nav-item {
-  color: red; }
-
-.navbar-nav > .nav-item:hover {
-  color: blue; }
-
-#logo {
-  width: 40%;
-  max-width: 10%;
-  height: auto;
-  margin-top: 90px;
-  margin-bottom: 90px; }
-
 h1 {
   font-weight: bold;
   color: #343a40; }
 
-#home h1 {
-  font-weight: bold;
-  margin-bottom: 30px; }
-
-#home h2 {
-  margin-bottom: 30px; }
-
-#home h3 {
-  margin-bottom: 10px; }
-
-#home img {
-  margin-top: 30px;
-  margin-bottom: 90px; }
+#home {
+  background: url("../assets/images/cupcakes-pastel-large.jpg");
+  height: 852px;
+  margin-top: -40px; }
+  #home .text-logo {
+    width: 50%; }
 
 #about-us {
   background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
@@ -5886,3 +5864,13 @@ h1 {
 
 #mail {
   border-right: 3px solid #ced4da; }
+
+.navbar-nav > .nav-item {
+  color: red; }
+
+.navbar-nav > .nav-item:hover {
+  color: blue; }
+
+#social-media > li {
+  font-size: 30px;
+  color: red; }
