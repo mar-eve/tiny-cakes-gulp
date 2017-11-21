@@ -5773,6 +5773,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 2rem; }
 
 .navbar-nav {
+  padding-top: 40px;
   text-align: right; }
 
 #navbarNav {
@@ -5788,6 +5789,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-right: 10px; }
 
 h1 {
+  text-align: center;
   font-weight: bold;
   color: #343a40; }
 
@@ -5798,8 +5800,8 @@ h1 {
   margin-top: 0;
   justify-content: center; }
   #home-col h1 {
-    padding-top: 60px;
-    font-size: 60px;
+    padding-top: 150px;
+    font-size: 80px;
     font-weight: 300;
     color: #78ddf9; }
   #home-col .text-logo {
@@ -5811,11 +5813,38 @@ h1 {
       #home-col .text-logo {
         width: 100%; } }
 
+#about-us, #about-product {
+  padding: 50px 10%; }
+  #about-us h1, #about-product h1 {
+    padding-bottom: 30px; }
+  #about-us img, #about-product img {
+    padding-bottom: 30px; }
+
 #about-us {
   background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
+  #about-us h1 {
+    color: #78ddf9; }
+  #about-us img {
+    width: 75%; }
 
 #about-product {
   background: url("../assets/backgrounds/knitting-blue.jpg"); }
+  #about-product img {
+    width: 75%; }
+  #about-product h1 {
+    color: #efcc70; }
+
+#history {
+  background: #dea0f7;
+  padding: 50px 15%; }
+  #history h1 {
+    padding: 50px 0; }
+  #history img {
+    width: 40%;
+    padding: 30px;
+    float: left; }
+  #history #second {
+    float: right; }
 
 .carousel-item img {
   padding: 10px 100px;
