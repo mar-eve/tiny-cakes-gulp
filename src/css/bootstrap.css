@@ -5899,6 +5899,12 @@ h1 {
 #articles {
   padding-bottom: 0; }
 
+.grid-item {
+  width: 500px; }
+
+.grid-item--width2 {
+  width: 1000px; }
+
 #articles-list ul {
   margin-bottom: 200px; }
 
