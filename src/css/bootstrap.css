@@ -5820,19 +5820,18 @@ h1 {
   #about-us img, #about-product img {
     padding-bottom: 30px; }
 
-#about-us {
-  background-image: url("../assets/backgrounds/symphony-gold.jpg"); }
-  #about-us h1 {
-    color: #78ddf9; }
-  #about-us img {
-    width: 75%; }
+#about-us h1, #about-us p {
+  color: #343a40; }
+
+#about-us img {
+  width: 75%; }
 
 #about-product {
   background: url("../assets/backgrounds/knitting-blue.jpg"); }
   #about-product img {
     width: 75%; }
-  #about-product h1 {
-    color: #efcc70; }
+  #about-product h1, #about-product p {
+    color: #fff; }
 
 #history {
   background: #dea0f7;
@@ -5860,44 +5859,99 @@ h1 {
   margin-right: 95px;
   padding: 10px 20px; }
 
+/*
 #item1 {
-  background: #7fc98f; }
-  #item1 a {
+	background: #7fc98f;
+	a{
+		color: #fff;
+		background:#494a12;
+	}
+	a:hover{
+		color: #494a12;
+		background:#fff;
+		border: 2px solid #494a12;
+		text-decoration:none;
+	}	
+}
+
+#item2 {
+	background: #dea0f7;
+	a{
+		color: #fff;
+		background:#632326;
+	}
+	a:hover{
+		color: #632326;
+		background:#fff;
+		border: 2px solid #632326;
+		text-decoration:none;
+	}
+}
+
+#item3 {
+	background: #78ddf9;
+	a{
+		color: #fff;
+		background:#10236a;
+	}
+	a:hover{
+		color: #10236a;
+		background:#fff;
+		border: 2px solid #10236a;
+		text-decoration:none;
+	}
+}
+*/
+.store {
+  height: 300px;
+  padding: 50px;
+  background: red; }
+
+.item1, .item5, .item9 {
+  background: #78ddf9;
+  opacity: 0.5; }
+  .item1 img, .item1 h3, .item1 a, .item5 img, .item5 h3, .item5 a, .item9 img, .item9 h3, .item9 a {
+    opacity: 1; }
+  .item1 a, .item5 a, .item9 a {
     color: #fff;
     background: #494a12; }
-  #item1 a:hover {
+  .item1 a:hover, .item5 a:hover, .item9 a:hover {
     color: #494a12;
     background: #fff;
     border: 2px solid #494a12;
     text-decoration: none; }
 
-#item2 {
-  background: #dea0f7; }
-  #item2 a {
+.item2, .item6 {
+  background: #dea0f7;
+  opacity: 0.5; }
+  .item2 a, .item6 a {
     color: #fff;
     background: #632326; }
-  #item2 a:hover {
+  .item2 a:hover, .item6 a:hover {
     color: #632326;
     background: #fff;
     border: 2px solid #632326;
     text-decoration: none; }
 
-#item3 {
-  background: #78ddf9; }
-  #item3 a {
+.item3, .item7 {
+  background: #568854; }
+  .item3 a, .item7 a {
     color: #fff;
     background: #10236a; }
-  #item3 a:hover {
+  .item3 a:hover, .item7 a:hover {
     color: #10236a;
     background: #fff;
     border: 2px solid #10236a;
     text-decoration: none; }
 
+.item4, .item8 {
+  background: #efcc70; }
+
 .carousel-control-next-icon {
   color: #000; }
 
 #articles {
-  padding-bottom: 0; }
+  padding-top: 100px; }
 
 .grid-item {
   width: 300px; }
@@ -5912,19 +5966,36 @@ h1 {
   text-decoration: none;
   padding-bottom: 60px; }
 
-#contact a:hover {
-  color: #bc9940;
-  text-decoration: none; }
+#contact {
+  padding-top: 100px; }
+  @media (min-width: 768px) {
+    #contact {
+      padding-bottom: 50px; } }
+  #contact .logo {
+    width: 100%; }
 
-#mail {
+#contact-col a {
+  text-decoration: none;
+  color: #868e96; }
+
+#contact-col a:hover {
+  color: #78ddf9; }
+
+#contact-col p {
+  padding-top: 40px; }
+
+#contact-col #mail {
   border-right: 3px solid #ced4da; }
 
-.navbar-nav > .nav-item {
-  color: red; }
-
-.navbar-nav > .nav-item:hover {
-  color: blue; }
-
-#social-media > li {
-  font-size: 30px;
-  color: red; }
+.social-media {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px; }
+  .social-media .social {
+    font-size: 30px;
+    color: #efcc70;
+    padding: 20px; }
+  .social-media .social:hover {
+    color: #fbcb04;
+    font-size: 32px; }
