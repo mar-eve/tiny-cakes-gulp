@@ -61,7 +61,7 @@
 
 		<div class="row" id="store">
 			<div class="col-12"  align="center">
-				<h1>Store</h1>
+				<h1><span id="1">S</span>tore</h1>
 			</div>
 			<div class="col-6 col-sm-4 item1 store">
 						
@@ -101,11 +101,11 @@
 			<div class="col-sm-12 col-md-5" align="center" id="about-us">
 					<h1>About Us</h1>
 					<img src="../assets/images/chocolatier.jpg">
-					<p>Integer hendrerit dolor non scelerisque condimentum. Vivamus at turpis lorem. Aenean augue ex, rhoncus in rutrum ut, sollicitudin id odio. Duis ultrices mi ac sem commodo blandit. </p> 
+					<p>Integer hendrerit dolor non scelerisque condimentum. Vivamus at turpis lorem.  </p> 
 					<p>Phasellus egestas pretium ex vel auctor. Vivamus varius tellus urna, ac condimentum eros bibendum non. Vestibulum sed blandit massa.  </p>
 				</div>
 				<div class="col-sm-12 col-md-7" align="center" id="about-product">
-					<h1>Our Products</h1>
+					<h2>Our Products</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget aliquet sem, sit amet congue lectus. Aenean sit amet vestibulum odio. </p>
 						<p>Donec bibendum ultricies enim, vel molestie sem tempus non. Sed commodo rhoncus felis sit amet laoreet. </p> 
 						<p>Ut sed molestie felis, ut lobortis justo. Integer orci lacus, pulvinar ac mi vitae, ornare molestie ligula. Praesent placerat nibh nec bibendum sollicitudin. Donec non quam sit amet est rhoncus auctor tempor sit amet odio.   </p>
@@ -116,13 +116,13 @@
 
 
 		<div class="row" id="history">
-			<div class="col-12" align="center">
+			<div class="col-12 history-h1-col" align="center">
 				<h1>History</h1>
-		<img src="assets/images/cupcakes-display.jpg" alt="cupcake display">
+			</div>
+			<div class="col-12" align="center">
+				<img src="assets/images/cupcakes-display.jpg" alt="cupcake display">
 				<p>Donec porta viverra libero non viverra. Praesent tellus arcu, mattis eget metus malesuada, ornare lacinia purus. Vestibulum dignissim diam ac mauris placerat efficitur. Nam vehicula tellus tellus, vel varius lorem dictum et. Proin tempor tristique dui, eget suscipit odio ornare id. </p>
-				
 				<p>Fusce elementum nisi non ipsum semper volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum in commodo metus. Integer id urna ornare, tristique libero in, pulvinar elit. Nullam mattis, orci ac iaculis cursus, erat dui aliquam nunc, ut viverra magna purus vel felis. </p>
-				
 				<img src="assets/images/baking.jpg" id="second" alt="hands pressing cookie cutter into dough">
 				<p>Proin metus mi, efficitur ut pulvinar sit amet, pulvinar nec dolor. Sed lacinia tincidunt nisi nec dictum. Aenean id nisi magna. Mauris dapibus venenatis ex, sodales ornare augue molestie sed. Suspendisse elementum sit amet mauris placerat consectetur. Sed pulvinar egestas augue eget vulputate. </p>
 				<img src="assets/images/cupcake-hand.jpg" alt="hand holding tiny cupcake">
@@ -214,17 +214,17 @@
 
 
 <div class="grid">
-  <div class="grid-item"><a href="#"><img src="assets/images/coffee-latte-article.jpg" alt="latte"></a></div>
+  	<div class="grid-item"><a href="#"><img src="assets/images/coffee-latte-article.jpg" alt="latte"></a></div>
 
-  <div class="grid-item grid-item--width2"><a href="#"><img src="assets/images/cupcakes-dots-article.jpg"></a></div>
+  	<div class="grid-item grid-item--width2"><a href="#"><img src="assets/images/cupcakes-dots-article.jpg"></a></div>
 
-  <div class="grid-item"><a href="#"><img src="assets/images/cupcakes-pink-article.jpg"></div>
+ 	 <div class="grid-item"><a href="#"><img src="assets/images/cupcakes-pink-article.jpg"></a></div>
 
-   <div class="grid-item frid-item--width2"> <a href="#"><img src="assets/images/muffin-bake-article.jpg"></a></div>
+  	 <div class="grid-item frid-item--width2"> <a href="#"><img src="assets/images/muffin-bake-article.jpg"></a></div>
 
-<div class="grid-item"><a href="#"><img src="assets/images/lemon-article.jpg"></a></div>
+	<div class="grid-item"><a href="#"><img src="assets/images/lemon-article.jpg"></a></div>
 
-<div class="grid-item"><a href="#"><img src="assets/images/blueberry-article.jpg"></a></div>
+	<div class="grid-item"><a href="#"><img src="assets/images/blueberry-article.jpg"></a></div>
 
 </div>
 
@@ -284,7 +284,7 @@ var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
-  columnWidth: 200
+  columnWidth: 300
 });
 
 // element argument can be a selector string

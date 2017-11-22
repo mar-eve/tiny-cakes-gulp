@@ -5760,7 +5760,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   background-image: url("../assets/backgrounds/geometry2.png"); }
 
 .navbar {
-  background-color: #efcc70;
+  background-color: transparent;
   height: 90px; }
   .navbar img {
     position: absolute;
@@ -5801,9 +5801,15 @@ h1 {
   justify-content: center; }
   #home-col h1 {
     padding-top: 150px;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 300;
     color: #78ddf9; }
+    @media (min-width: 596px) {
+      #home-col h1 {
+        font-size: 60px; } }
+    @media (min-width: 768px) {
+      #home-col h1 {
+        font-size: 80px; } }
   #home-col .text-logo {
     display: inline-block;
     margin: 0 auto;
@@ -5813,9 +5819,55 @@ h1 {
       #home-col .text-logo {
         width: 100%; } }
 
+#store {
+  height: 300px;
+  padding: 50px; }
+  #store h1 {
+    font-size: 44px;
+    color: purple; }
+  #store #1 {
+    color: red; }
+
+.item1, .item5, .item9 {
+  opacity: 0.5; }
+  .item1 img, .item1 h3, .item1 a, .item5 img, .item5 h3, .item5 a, .item9 img, .item9 h3, .item9 a {
+    opacity: 1; }
+  .item1 a, .item5 a, .item9 a {
+    color: #fff;
+    background: #494a12; }
+  .item1 a:hover, .item5 a:hover, .item9 a:hover {
+    color: #494a12;
+    background: #fff;
+    border: 2px solid #494a12;
+    text-decoration: none; }
+
+.item2 a, .item6 a {
+  color: #fff;
+  background: #632326; }
+
+.item2 a:hover, .item6 a:hover {
+  color: #632326;
+  background: #fff;
+  border: 2px solid #632326;
+  text-decoration: none; }
+
+.item3 a, .item7 a {
+  color: #fff;
+  background: #10236a; }
+
+.item3 a:hover, .item7 a:hover {
+  color: #10236a;
+  background: #fff;
+  border: 2px solid #10236a;
+  text-decoration: none; }
+
 #about-us, #about-product {
   padding: 50px 10%; }
   #about-us h1, #about-product h1 {
+    font-size: 3rem;
+    padding-bottom: 30px; }
+  #about-us h2, #about-product h2 {
+    font-size: 2rem;
     padding-bottom: 30px; }
   #about-us img, #about-product img {
     padding-bottom: 30px; }
@@ -5830,20 +5882,37 @@ h1 {
   background: url("../assets/backgrounds/knitting-blue.jpg"); }
   #about-product img {
     width: 75%; }
-  #about-product h1, #about-product p {
+  #about-product h2, #about-product p {
     color: #fff; }
 
 #history {
   background: #dea0f7;
-  padding: 50px 15%; }
+  padding: 30px 10%; }
   #history h1 {
-    padding: 50px 0; }
+    background: #954548;
+    padding-top: 30px;
+    vertical-align: middle;
+    width: 100%;
+    padding-bottom: 27px;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 1.3rem;
+    color: #fff; }
+  #history p {
+    padding-top: 30px; }
   #history img {
-    width: 40%;
-    padding: 30px;
-    float: left; }
-  #history #second {
-    float: right; }
+    display: block;
+    float: none;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 100%; }
+  @media (min-width: 768px) {
+    #history img {
+      width: 40%;
+      padding: 30px;
+      float: left; }
+    #history #second {
+      float: right; } }
 
 .carousel-item img {
   padding: 10px 100px;
@@ -5902,56 +5971,12 @@ h1 {
 	}
 }
 */
-.store {
-  height: 300px;
-  padding: 50px;
-  background: red; }
-
-.item1, .item5, .item9 {
-  background: #78ddf9;
-  opacity: 0.5; }
-  .item1 img, .item1 h3, .item1 a, .item5 img, .item5 h3, .item5 a, .item9 img, .item9 h3, .item9 a {
-    opacity: 1; }
-  .item1 a, .item5 a, .item9 a {
-    color: #fff;
-    background: #494a12; }
-  .item1 a:hover, .item5 a:hover, .item9 a:hover {
-    color: #494a12;
-    background: #fff;
-    border: 2px solid #494a12;
-    text-decoration: none; }
-
-.item2, .item6 {
-  background: #dea0f7;
-  opacity: 0.5; }
-  .item2 a, .item6 a {
-    color: #fff;
-    background: #632326; }
-  .item2 a:hover, .item6 a:hover {
-    color: #632326;
-    background: #fff;
-    border: 2px solid #632326;
-    text-decoration: none; }
-
-.item3, .item7 {
-  background: #568854; }
-  .item3 a, .item7 a {
-    color: #fff;
-    background: #10236a; }
-  .item3 a:hover, .item7 a:hover {
-    color: #10236a;
-    background: #fff;
-    border: 2px solid #10236a;
-    text-decoration: none; }
-
-.item4, .item8 {
-  background: #efcc70; }
-
 .carousel-control-next-icon {
   color: #000; }
 
 #articles {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .grid-item {
   width: 300px; }
