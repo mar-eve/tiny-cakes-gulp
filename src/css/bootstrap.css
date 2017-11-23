@@ -5764,6 +5764,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   height: 90px; }
   .navbar img {
     position: absolute;
+    display: block;
     margin-top: -5px;
     width: 88px;
     height: 88px; }
@@ -5788,28 +5789,45 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-size: 20px;
   padding-right: 10px; }
 
-h1 {
-  text-align: center;
-  font-weight: bold;
-  color: #343a40; }
-
 #home-col {
   background: url("../assets/images/cupcakes-pastel-large.jpg") no-repeat center;
   height: 852px;
   padding: 100px 5% 0 5%;
   margin-top: 0;
   justify-content: center; }
-  #home-col h1 {
-    padding-top: 150px;
-    font-size: 40px;
+  #home-col h1, #home-col h2, #home-col span {
+    background: rgba(230, 230, 255, 0.6);
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 300;
-    color: #78ddf9; }
-    @media (min-width: 596px) {
-      #home-col h1 {
-        font-size: 60px; } }
-    @media (min-width: 768px) {
-      #home-col h1 {
-        font-size: 80px; } }
+    letter-spacing: 1.2rem;
+    color: #568854; }
+  #home-col h2 {
+    margin-top: 0px;
+    padding-top: 0; }
+  #home-col span {
+    background: #568854;
+    margin-top: 60px;
+    margin-right: 8px;
+    padding: 5px;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    color: #fff; }
+  @media (min-width: 596px) {
+    #home-col h1, #home-col h2 {
+      font-size: 3rem; }
+    #home-col span {
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    #home-col h1, #home-col h2 {
+      font-size: 6rem; }
+    #home-col span {
+      font-size: 2.6rem; }
+    #home-col h2 {
+      font-size: 6rem; } }
   #home-col .text-logo {
     display: inline-block;
     margin: 0 auto;
@@ -5820,46 +5838,29 @@ h1 {
         width: 100%; } }
 
 #store {
-  height: 300px;
-  padding: 50px; }
+  background-color: #eef9f0;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%239C92AC' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
+  padding: 80px 10% 120px 10%; }
   #store h1 {
-    font-size: 44px;
-    color: purple; }
-  #store #1 {
-    color: red; }
-
-.item1, .item5, .item9 {
-  opacity: 0.5; }
-  .item1 img, .item1 h3, .item1 a, .item5 img, .item5 h3, .item5 a, .item9 img, .item9 h3, .item9 a {
-    opacity: 1; }
-  .item1 a, .item5 a, .item9 a {
-    color: #fff;
-    background: #494a12; }
-  .item1 a:hover, .item5 a:hover, .item9 a:hover {
-    color: #494a12;
+    padding-bottom: 70px;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 1.3rem;
+    color: #495057; }
+  #store a {
+    background: #494a12;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 50px;
+    letter-spacing: 0.8rem;
+    color: #fff; }
+  #store a:hover {
     background: #fff;
     border: 2px solid #494a12;
-    text-decoration: none; }
-
-.item2 a, .item6 a {
-  color: #fff;
-  background: #632326; }
-
-.item2 a:hover, .item6 a:hover {
-  color: #632326;
-  background: #fff;
-  border: 2px solid #632326;
-  text-decoration: none; }
-
-.item3 a, .item7 a {
-  color: #fff;
-  background: #10236a; }
-
-.item3 a:hover, .item7 a:hover {
-  color: #10236a;
-  background: #fff;
-  border: 2px solid #10236a;
-  text-decoration: none; }
+    text-decoration: none;
+    color: #494a12; }
 
 #about-us, #about-product {
   padding: 50px 10%; }
@@ -5869,6 +5870,8 @@ h1 {
   #about-us h2, #about-product h2 {
     font-size: 2rem;
     padding-bottom: 30px; }
+  #about-us p, #about-product p {
+    text-align: justify; }
   #about-us img, #about-product img {
     padding-bottom: 30px; }
 
@@ -5914,82 +5917,20 @@ h1 {
     #history #second {
       float: right; } }
 
-.carousel-item img {
-  padding: 10px 100px;
-  margin: 100px 0; }
-
-.carousel-item h3 {
-  padding: 50px 95px 0 0; }
-
-.carousel-item p {
-  padding: 0 95px 10px 0; }
-
-.carousel-item a {
-  margin-right: 95px;
-  padding: 10px 20px; }
-
-/*
-#item1 {
-	background: #7fc98f;
-	a{
-		color: #fff;
-		background:#494a12;
-	}
-	a:hover{
-		color: #494a12;
-		background:#fff;
-		border: 2px solid #494a12;
-		text-decoration:none;
-	}	
-}
-
-#item2 {
-	background: #dea0f7;
-	a{
-		color: #fff;
-		background:#632326;
-	}
-	a:hover{
-		color: #632326;
-		background:#fff;
-		border: 2px solid #632326;
-		text-decoration:none;
-	}
-}
-
-#item3 {
-	background: #78ddf9;
-	a{
-		color: #fff;
-		background:#10236a;
-	}
-	a:hover{
-		color: #10236a;
-		background:#fff;
-		border: 2px solid #10236a;
-		text-decoration:none;
-	}
-}
-*/
-.carousel-control-next-icon {
-  color: #000; }
-
 #articles {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  font-size: 50px;
+  font-weight: 400; }
+  #articles h1 {
+    color: #868e96;
+    letter-spacing: 1rem; }
 
 .grid-item {
   width: 300px; }
 
 .grid-item--width2 {
   width: 600px; }
-
-#articles-list ul {
-  margin-bottom: 200px; }
-
-#articles-list a {
-  text-decoration: none;
-  padding-bottom: 60px; }
 
 #contact {
   padding-top: 100px; }

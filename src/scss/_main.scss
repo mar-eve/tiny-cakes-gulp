@@ -2,30 +2,20 @@
 #shell, #bottomNav {
 	background-image: url("../assets/backgrounds/geometry2.png");
  	} 
- 	
- .topNav {
-
- }
  .navbar {
  	background-color: transparent;
  	height: 90px;
  	img {
  	position: absolute;
+ 	display: block;
  	margin-top: -5px;
  	width: 88px;
- 	height: 88px;
- 		@media(min-width: 596px){
- 		}
+ 	height: 88px;	
  	}
  }	
-img.navbar-brand.logo {
-	
-	
-}
 .navbar-toggler {
 	align-self:flex-end;
 	font-size: 2rem;
-
 }
 .navbar-nav {
 	padding-top: 40px;
@@ -37,7 +27,6 @@ img.navbar-brand.logo {
 .div#navbarNav.navbar-collapse.collapse.show {
 	padding: 0;
 }
-
 .navbar-nav > li {
     display: inline-block;
     float:none;
@@ -45,100 +34,95 @@ img.navbar-brand.logo {
     padding-right: 10px;
 	}
 
-h1 {
-	text-align: center;
-	font-weight: bold;
-	color: $gray-800;
-}
-
-
 #home-col {
 	background: url("../assets/images/cupcakes-pastel-large.jpg") no-repeat center;
 	height: 852px;
 	padding: 100px 5% 0 5%;
 	margin-top: 0;
-	h1 {
-		padding-top: 150px;
-		font-size: 40px;
-		font-weight: 300;
-		color: #78ddf9;
-		@media (min-width: 596px){
-			font-size: 60px;
-		}
-		@media (min-width: 768px){
-			font-size: 80px;
-		}
-	}
 	justify-content: center;
+
+	h1 , h2, span{
+		background: rgba(230, 230, 255, .6);
+		margin-top: 100px;
+		padding: 0;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 300;
+		letter-spacing: 1.2rem;
+		color: $green;	
+	}
+	h2 { 
+		margin-top: 0px;
+		padding-top: 0;
+	}
+	span{
+		background: $green;
+		margin-top: 60px;
+		margin-right: 8px;
+		padding: 5px;
+		text-align: left;
+		font-size: 1rem;
+		letter-spacing: 0.5rem;
+		color: #fff;
+	}
+	@media (min-width: 596px){
+		h1, h2 {
+			font-size: 3rem;	
+		}
+		span{
+			font-size:1rem;	
+		}
+	}
+		@media (min-width: 768px){
+			h1, h2 {
+			font-size: 6rem;
+		}
+		span {
+			font-size: 2.6rem;
+		}
+		h2{
+			font-size: 6rem;
+		}
+		}
 		.text-logo {
-		display: inline-block;
-		margin: 0 auto;
-		padding-top: 80px;
-		 width: 100%;
-		 @media(min-width: 596px){
-		 width: 100%;
-		 }
+			display: inline-block;
+			margin: 0 auto;
+			padding-top: 80px;
+			 width: 100%;
+			 @media(min-width: 596px){
+			 width: 100%;
+			 }
 		}
 }
-#store {
-	height: 300px;
-	padding: 50px;
-	h1 {
-		font-size: 44px;
-		color: purple;
-	}
-	#1 {
-		color:red;
-	}
 
-}
-.item1, .item5, .item9{
-	opacity: 0.5;
-	img, h3, a {
-		opacity: 1;
-	}
+#store {
+	background-color: #eef9f0;
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%239C92AC' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
+	padding: 80px 10% 120px 10%;
+	h1 {
+		padding-bottom: 70px;
+		font-size: 3em;
+		font-weight: 300;
+		letter-spacing: 1.3rem;
+		color: $gray-700
+	}	
 	a{
-		color: #fff;
 		background:#494a12;
+		display:inline-block;
+		margin: 0 auto;
+		margin-top: 50px;
+		text-align: center;
+		padding: 10px 50px;
+		letter-spacing: 0.8rem;
+		color: #fff;
 	}
 	a:hover{
-		color: #494a12;
 		background:#fff;
 		border: 2px solid #494a12;
 		text-decoration:none;
-	}	
-}
-
-.item2,.item6 {
-	
-
-	a{
-		color: #fff;
-		background:#632326;
-	}
-	a:hover{
-		color: #632326;
-		background:#fff;
-		border: 2px solid #632326;
-		text-decoration:none;
+		color: #494a12;
 	}
 }
-
-.item3, .item7 {
-	a{
-		color: #fff;
-		background:#10236a;
-	}
-	a:hover{
-		color: #10236a;
-		background:#fff;
-		border: 2px solid #10236a;
-		text-decoration:none;
-	}
-}
-.item4, .item8 {
-}
-
 
 #about-us, #about-product {
 	padding: 50px 10%;
@@ -150,12 +134,14 @@ h1 {
 		font-size: 2rem;
 		padding-bottom: 30px;
 	}
+	p {
+		text-align: justify;
+	}
 	img {
 		padding-bottom: 30px;
 	}
 }
 #about-us{
- 	//background-image: url("../assets/backgrounds/symphony-gold.jpg");
  	h1, p {
  		color: $gray-800;
  	}
@@ -165,20 +151,18 @@ h1 {
 }
 
 #about-product{
- background: url("../assets/backgrounds/knitting-blue.jpg");
- img {
- 	width: 75%;
- }
- h2,p{
- 	color: #fff;
- }
+ 	background: url("../assets/backgrounds/knitting-blue.jpg");
+	 img {
+ 		width: 75%;
+ 	}
+ 	h2,p{
+ 		color: #fff;
+ 	}
 }
+
 #history {
 	background: $lilac;
 	padding: 30px 10%;
-
-
-	
 	h1 {
 		background: #954548;
 		padding-top: 30px;
@@ -200,10 +184,7 @@ h1 {
 		width: 100%;
 		max-width: 100%;	
 	}
-	
-
 	@media(min-width: 768px){
-
 		img {		
 			width: 40%;
 			padding: 30px;
@@ -214,97 +195,22 @@ h1 {
 		}
 	}
 }
-.carousel-item {
-	img {
-		padding: 10px 100px;
-		margin: 100px 0;
-	}
-	h3 {
-		padding: 50px 95px 0 0;
-	
-	}
-	p {
-		padding:  0 95px 10px 0;
-	}
-
-
-	a{
-	margin-right: 95px;
-	
-	padding: 10px 20px;
-		
-	}  
-}
-
-/*
-#item1 {
-	background: #7fc98f;
-	a{
-		color: #fff;
-		background:#494a12;
-	}
-	a:hover{
-		color: #494a12;
-		background:#fff;
-		border: 2px solid #494a12;
-		text-decoration:none;
-	}	
-}
-
-#item2 {
-	background: #dea0f7;
-	a{
-		color: #fff;
-		background:#632326;
-	}
-	a:hover{
-		color: #632326;
-		background:#fff;
-		border: 2px solid #632326;
-		text-decoration:none;
-	}
-}
-
-#item3 {
-	background: #78ddf9;
-	a{
-		color: #fff;
-		background:#10236a;
-	}
-	a:hover{
-		color: #10236a;
-		background:#fff;
-		border: 2px solid #10236a;
-		text-decoration:none;
-	}
-}
-*/
-
-.carousel-control-next-icon {
-	color: #000;
-}
-
 
 #articles {
 	padding-top: 100px;
 	padding-bottom: 100px;
-
+	font-size: 50px;
+	font-weight: 400;
+	h1{
+		color: $gray-600;
+		letter-spacing: 1rem;
+	}
 
 }
 
 .grid-item { width: 300px; }
 .grid-item--width2 { width: 600px; }
-#articles-list {
-	
-	//height: 100px;
-	ul {
-		margin-bottom: 200px;
-	}
-	a {
-		text-decoration: none;
-		padding-bottom: 60px;
-	}
-}
+
 #contact {
 	padding-top: 100px;
 	@media(min-width: 768px){
@@ -321,21 +227,17 @@ h1 {
  	color: $gray-600;
 	}
 	a:hover {
-		color: $blue;
-		
+		color: $blue;	
 	}
 	p{
 		padding-top: 40px;
 	}
-
-
 	#mail {
 		
 		border-right: 3px solid $gray-400;
 	}
 
 }
-
 
 .social-media{
 
