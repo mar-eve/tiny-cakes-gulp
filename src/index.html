@@ -14,7 +14,7 @@
 		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		   		<span class="navbar-toggler-icon"></span>
 		  		</button>
-				<img class="navbar-brand logo" src="assets/logos/tiny-cakes-logo-88.png">
+				<img class="navbar-brand" id="logo" src="assets/logos/tiny-cakes-logo-88.png">
 				<div class="collapse navbar-collapse" id="navbarNav">
 			    <ul class="navbar-nav flex-sm-col">
 			      <li class="nav-item active">
@@ -131,7 +131,7 @@
 		<div class="row" id="contact">
 			<div class="col-12" align="center">
 				<!--  Logo Here -->
-				<img class ="img-fluid" id="logo" src="assets/logos/tiny-cakes-text-logo-blue.png" alt="logo" width="268px" height="268px">
+				<img class ="img-fluid" src="assets/logos/tiny-cakes-text-logo-blue.png" alt="logo" width="268px" height="268px">
 			</div>
 		</div>
 		<div class="row" id="contact-col">
@@ -158,9 +158,16 @@
 				</div>
 			</div>
 	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
 	<script type="text/javascript">
 		var elem = document.querySelector('.grid');
 		var msnry = new Masonry( elem, {
@@ -174,6 +181,24 @@
 		var msnry = new Masonry( '.grid', {
   // options
 	});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+				$(window).scroll(function() {
+		   			if( $(document).scrollTop()> 100) {
+		   				$('#logo').css ({
+		   					'display':'none'
+		   			   });
+		 		  	}
+		 		  	if( $(document).scrollTop() <=99) {
+						$('#logo').css ({
+		   					'display':'block',
+		   					'position':'absolute'	
+			 			});
+					}
+			});
+		});
 	</script>
 </body>
 </html>
