@@ -22,13 +22,15 @@
 	}
 }
 .navbar-nav {
-	background: rgba(255,255,255,0.9);
-	z-index:1;
-	padding-top: 26px;
-	margin-top: -70px;
+	z-position: 1;
+	padding-top: 0;
+	margin-top: 0;
 	height: 90px;
-	flex-direction: row;
-  	justify-content: center; 
+	flex-direction: column;
+	a {
+		background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.8));
+	}
+  	
 }
 #navbarNav {
 	padding: 0;
@@ -40,7 +42,7 @@
     display: inline-block;
     float:none;
     font-size: 20px;
-    padding-right: 30px;
+    text-align: right;
 	}
 
 #home-col {
@@ -53,7 +55,7 @@
 	h1 , h2, span{
 		background: rgba(230, 230, 255, .7);
 		margin-top: 100px;
-		padding: 0;
+		padding-top: 0;
 		text-align: center;
 		font-size: 2rem;
 		font-weight: 300;
