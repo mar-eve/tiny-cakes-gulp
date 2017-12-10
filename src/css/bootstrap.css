@@ -71,7 +71,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -3424,7 +3424,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3506,7 +3506,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5757,14 +5757,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 #shell, #bottomNav {
-  background-image: url("../assets/backgrounds/geometry2.png"); }
+  background-image: url("../assets/backgrounds/geometry2.png");
+  font-family: "Open Sans", Arial, sans-serif; }
 
 .navbar {
   background-color: transparent; }
   .navbar #logo {
     position: absolute;
     display: block;
-    margin-top: -5px; }
+    margin-top: 7px;
+    margin-left: 5px; }
 
 button.navbar-toggler {
   z-position: 2; }
@@ -5798,13 +5800,26 @@ button.navbar-toggler {
   font-size: 20px;
   text-align: right; }
 
+h1, h2 {
+  font-family: "Open-sans", Arial, sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: .3rem; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .3rem; }
+
 #home-col {
   background: url("../assets/images/cupcakes-pastel-large.jpg") no-repeat center;
   height: 852px;
   padding: 100px 5% 0 5%;
   margin-top: 0;
   justify-content: center; }
-  #home-col h1, #home-col h2, #home-col span {
+  #home-col h1, #home-col span {
     background: rgba(230, 230, 255, 0.7);
     margin-top: 100px;
     padding-top: 0;
@@ -5813,9 +5828,6 @@ button.navbar-toggler {
     font-weight: 300;
     letter-spacing: 1.2rem;
     color: #568854; }
-  #home-col h2 {
-    margin-top: 0px;
-    padding-top: 0; }
   #home-col span {
     background: #568854;
     margin-top: 60px;
@@ -5852,10 +5864,12 @@ button.navbar-toggler {
   padding: 80px 10% 120px 10%; }
   #store h1 {
     padding-bottom: 70px;
-    font-size: 3em;
-    font-weight: 300;
-    letter-spacing: 1.3rem;
     color: #495057; }
+  #store img {
+    display: block;
+    margin: 0 auto; }
+  #store p {
+    text-align: center; }
   #store a {
     background: #494a12;
     display: inline-block;
@@ -5874,10 +5888,8 @@ button.navbar-toggler {
 #about-us, #about-product {
   padding: 50px 10%; }
   #about-us h1, #about-product h1 {
-    font-size: 3rem;
     padding-bottom: 30px; }
   #about-us h2, #about-product h2 {
-    font-size: 2rem;
     padding-bottom: 30px; }
   #about-us p, #about-product p {
     text-align: justify; }
@@ -5903,15 +5915,19 @@ button.navbar-toggler {
   #history h1 {
     background: #954548;
     padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 2%;
     vertical-align: middle;
     width: 100%;
     padding-bottom: 27px;
-    font-size: 3em;
-    font-weight: 300;
-    letter-spacing: 1.3rem;
+    text-align: center;
     color: #fff; }
+    @media (min-width: 443px) {
+      #history h1 {
+        font-size: 3em; } }
   #history p {
-    padding-top: 30px; }
+    padding-top: 30px;
+    text-align: left; }
   #history img {
     display: block;
     float: none;
@@ -5932,8 +5948,7 @@ button.navbar-toggler {
   font-size: 50px;
   font-weight: 400; }
   #articles h1 {
-    color: #868e96;
-    letter-spacing: 1rem; }
+    color: #868e96; }
 
 .grid-item {
   width: 300px; }

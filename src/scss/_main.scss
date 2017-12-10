@@ -1,13 +1,15 @@
 
 #shell, #bottomNav {
 	background-image: url("../assets/backgrounds/geometry2.png");
+	font-family: "Open Sans", Arial, sans-serif;
  	} 
  .navbar {
  	background-color: transparent;
  	 #logo{
 	 		position: absolute;
 	 		display: block;
-	 		margin-top: -5px;		
+	 		margin-top: 7px;
+	 		margin-left: 5px;		
  	}
  }	
  button.navbar-toggler {
@@ -44,7 +46,17 @@
     font-size: 20px;
     text-align: right;
 	}
-
+h1, h2 { font-family: "Open-sans", Arial, sans-serif}
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: .3rem;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: .3rem;
+}
 #home-col {
 	background: url("../assets/images/cupcakes-pastel-large.jpg") no-repeat center;
 	height: 852px;
@@ -52,7 +64,7 @@
 	margin-top: 0;
 	justify-content: center;
 
-	h1 , h2, span{
+	h1 , span{
 		background: rgba(230, 230, 255, .7);
 		margin-top: 100px;
 		padding-top: 0;
@@ -61,10 +73,6 @@
 		font-weight: 300;
 		letter-spacing: 1.2rem;
 		color: $green;	
-	}
-	h2 { 
-		margin-top: 0px;
-		padding-top: 0;
 	}
 	span{
 		background: $green;
@@ -112,10 +120,17 @@
 	padding: 80px 10% 120px 10%;
 	h1 {
 		padding-bottom: 70px;
-		font-size: 3em;
-		font-weight: 300;
-		letter-spacing: 1.3rem;
+		//font-size: 3em;
+		//font-weight: 300;
+		//letter-spacing: 1.3rem;
 		color: $gray-700
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	p {
+		text-align: center;
 	}	
 	a{
 		background:#494a12;
@@ -138,11 +153,11 @@
 #about-us, #about-product {
 	padding: 50px 10%;
 	h1 {
-		font-size: 3rem;
+		//font-size: 3rem;
 		padding-bottom: 30px;
 	}
 	h2 {
-		font-size: 2rem;
+		//font-size: 2rem;
 		padding-bottom: 30px;
 	}
 	p {
@@ -175,18 +190,26 @@
 	background: $lilac;
 	padding: 30px 10%;
 	h1 {
+		
 		background: #954548;
 		padding-top: 30px;
+		padding-left: 5%;
+		padding-right: 2%;
 		vertical-align: middle;
 		width: 100%;
 		padding-bottom: 27px;
-		font-size: 3em;
-		font-weight: 300;
-		letter-spacing: 1.3rem;
+		text-align: center;
+		//font-size: 1.5em;
+		//font-weight: 300;
+		//letter-spacing: 1.3rem;
 		color: #fff;
+		@media(min-width: 443px){
+			font-size: 3em;
+		}
 	}
 	p {
 		padding-top: 30px;
+		text-align: left;
 	}
 	img {
 		display: block;
@@ -214,7 +237,7 @@
 	font-weight: 400;
 	h1{
 		color: $gray-600;
-		letter-spacing: 1rem;
+		//letter-spacing: 1rem;
 	}
 
 }
